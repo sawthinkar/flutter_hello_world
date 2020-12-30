@@ -14,7 +14,7 @@ class HelloWorld extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Click for Blue / Long Press for Green'),
+        title: Text('Click Me for Blue / Long Press for Green'),
       ),
       body: Center(
         // child: Text('Hello World'),
@@ -42,7 +42,7 @@ class ClickMe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter ClickMe',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,

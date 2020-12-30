@@ -73,6 +73,14 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            // ElevatedButton
+            // <https://flutter.dev/docs/cookbook/navigation/navigation-basics>
+            // ElevatedButton(
+            //   onPressed: () {
+            //     Navigator.pop(context);
+            //   },
+            //   child: Text('Go back!'),
+            // ),
           ],
         ),
       ),
