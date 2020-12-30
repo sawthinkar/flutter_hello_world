@@ -1,5 +1,8 @@
 # hello_world
 
+Write your first Flutter app, part 1  
+<https://flutter.dev/docs/get-started/codelab>  
+
 A new Flutter project.
 
 ## Getting Started
