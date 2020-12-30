@@ -30,8 +30,11 @@
 .pub-cache/
 .pub/
 /build/
+
+# Remove before pushing to github
 ios
 android
+integration_test
 
 # Web related
 lib/generated_plugin_registrant.dart

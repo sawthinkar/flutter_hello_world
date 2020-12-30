@@ -1,11 +1,38 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MaterialApp(
+    title: 'Home',
+    home: HelloWorld(),
+  ));
+}
+
+class HelloWorld extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Welcome to Flutter'),
+      ),
+      body: Center(
+        // child: Text('Hello World'),
+        child: ElevatedButton(
+          child: Text('Press Me'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => MyApp()),
+            );
+          },
+          // onLongPress: (),
+        ),
+      ),
+    );
+  }
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
