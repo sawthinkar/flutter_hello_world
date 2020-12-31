@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/myhomepage.dart';
+import 'package:hello_world/wordgenerator.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -61,7 +62,7 @@ class LongPress extends StatelessWidget {
         primarySwatch: Colors.lightGreen,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Long Press brought me here'),
+      home: WordGenerator(),
     );
   }
 }
