@@ -3,7 +3,7 @@
 Write your first Flutter app, part 1  
 <https://flutter.dev/docs/get-started/codelab>  
 
-Navigate to a new screen and back
+Navigate to a new screen and back  
 <https://flutter.dev/docs/cookbook/navigation/navigation-basics>
 
 A new Flutter project.
