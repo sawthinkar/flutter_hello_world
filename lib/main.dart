@@ -5,6 +5,7 @@ import 'package:hello_world/wordgenerator.dart';
 void main() {
   runApp(MaterialApp(
     title: 'Home',
+    theme: ThemeData(fontFamily: 'Arial Rounded Bold'),
     home: HelloWorld(),
   ));
 }
@@ -15,7 +16,11 @@ class HelloWorld extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Click Me for Blue / Long Press for Green'),
+        backgroundColor: Colors.black,
+        // iconTheme: IconThemeData(color: Colors.redAccent),
+        title: Text(
+            'Click Me for Increment Counter / \n Long Press Name Generator',
+            style: TextStyle(fontFamily: 'Luminari')),
       ),
       body: Center(
         // child: Text('Hello World'),
