@@ -1,10 +1,28 @@
 # Flutter Sandbox
 
-Write your first Flutter app, part 1  
+• Write your first Flutter app, part 1  
 <https://flutter.dev/docs/get-started/codelab>  
 
-Navigate to a new screen and back  
+• Navigate to a new screen and back  
 <https://flutter.dev/docs/cookbook/navigation/navigation-basics>
+
+• Files from `/build/web/*` are moved to `/docs/*`, so that GitHub Pages can run.  
+
+• `base href` from `/docs/index.html` is commented out.
+
+``` markdown
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <!-- <base href="/"> -->
+```
 
 A new Flutter project.
 
