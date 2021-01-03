@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_world/myhomepage.dart';
 import 'package:hello_world/wordgenerator.dart';
 import 'package:hello_world/animatedppacity.dart';
+import 'package:hello_world/secondbutton.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -77,10 +78,11 @@ class LongPress extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Long Press',
       theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
+        // primarySwatch: Colors.lightGreen,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: WordGenerator(),
+      // home: MyApp(),
     );
   }
 }

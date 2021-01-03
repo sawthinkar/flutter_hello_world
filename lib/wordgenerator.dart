@@ -9,6 +9,10 @@ class WordGenerator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Startup Name Generator',
+      theme: ThemeData(
+        // https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2#6
+        primaryColor: Colors.white,
+      ),
       home: RandomWords(),
     );
   }
@@ -27,7 +31,7 @@ class _RandomWordsState extends State<RandomWords> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.green,
+          // backgroundColor: Colors.green,
           title: Text('Name Generator'),
           actions: [
             IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
