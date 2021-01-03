@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:hello_world/main.dart';
 
 void main() => runApp(WordGenerator());
 
@@ -26,13 +27,27 @@ class _RandomWordsState extends State<RandomWords> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green,
-        title: Text('Name Generator'),
-      ),
+          backgroundColor: Colors.green,
+          title: Text('Name Generator'),
+          actions: [
+            IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
+          ],
+          // back button
+          // https://medium.com/@iamatul_k/flutter-handle-back-button-in-a-flutter-application-override-back-arrow-button-in-app-bar-d17e0a3d41f
+          leading: new IconButton(
+            icon: new Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HelloWorld()),
+              );
+            },
+          )),
       body: _buildSuggestions(),
     );
   }
 
+// To populate the list of the contents
   Widget _buildSuggestions() {
     return ListView.builder(
         padding: EdgeInsets.all(16.0),
@@ -47,6 +62,7 @@ class _RandomWordsState extends State<RandomWords> {
         });
   }
 
+// content of each row
   Widget _buildRow(WordPair pair) {
     final alreadySaved = _saved.contains(pair);
     return ListTile(
@@ -68,4 +84,6 @@ class _RandomWordsState extends State<RandomWords> {
           });
         });
   }
+
+  void _pushSaved() {}
 }
