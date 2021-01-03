@@ -6,6 +6,9 @@
 • Navigate to a new screen and back  
 <https://flutter.dev/docs/cookbook/navigation/navigation-basics>
 
+• AnimatedOpacity class  
+<https://api.flutter.dev/flutter/widgets/AnimatedOpacity-class.html>
+
 • Files from `/build/web/*` are moved to `/docs/*`, so that GitHub Pages can run.  
 
 • `base href` from `/docs/index.html` is commented out.
