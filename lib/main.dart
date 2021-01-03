@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/myhomepage.dart';
 import 'package:hello_world/wordgenerator.dart';
+import 'package:hello_world/animatedppacity.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -22,23 +23,35 @@ class HelloWorld extends StatelessWidget {
             'Click Me for Increment Counter / \n Long Press Name Generator',
             style: TextStyle(fontFamily: 'Luminari')),
       ),
-      body: Center(
+      body: Column(
         // child: Text('Hello World'),
-        child: ElevatedButton(
-          child: Text('BUTTON'),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => ClickMe()),
-            );
-          },
-          onLongPress: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => LongPress()),
-            );
-          },
-        ),
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          ElevatedButton(
+            child: Text('BUTTON'),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ClickMe()),
+              );
+            },
+            onLongPress: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => LongPress()),
+              );
+            },
+          ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LogoFade()),
+                );
+              },
+              child: Text('Fade Logo'))
+        ],
       ),
     );
   }
