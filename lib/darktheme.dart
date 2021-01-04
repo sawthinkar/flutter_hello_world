@@ -1,4 +1,5 @@
 // <https://mhatsu.to/dark-theme-in-flutter/>
+// This code doesn't work.
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

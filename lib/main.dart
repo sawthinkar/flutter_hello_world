@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_world/myhomepage.dart';
 import 'package:hello_world/wordgenerator.dart';
 import 'package:hello_world/animatedppacity.dart';
-import 'package:hello_world/secondbutton.dart';
+import 'package:hello_world/darktheme.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -44,6 +44,7 @@ class HelloWorld extends StatelessWidget {
               );
             },
           ),
+          Text('အောက်ကခလုပ်ကိုနိုပ်ကြည့်ပါ။'),
           ElevatedButton(
               onPressed: () {
                 Navigator.push(

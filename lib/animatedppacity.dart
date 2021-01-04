@@ -16,19 +16,25 @@ class LogoFadeState extends State<LogoFade> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        AnimatedOpacity(
-          opacity: opacityLevel,
-          duration: Duration(seconds: 1),
-          child: FlutterLogo(),
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(30.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            AnimatedOpacity(
+              opacity: opacityLevel,
+              duration: Duration(seconds: 1),
+              child: FlutterLogo(),
+            ),
+            Text('Try the Animated Opacity.'),
+            ElevatedButton(
+              child: Text('Fade Logo'),
+              onPressed: _changeOpacity,
+            ),
+          ],
         ),
-        ElevatedButton(
-          child: Text('Fade Logo'),
-          onPressed: _changeOpacity,
-        ),
-      ],
+      ),
     );
   }
 }
